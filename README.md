@@ -16,24 +16,6 @@ drawSvg is available on PyPI:
 $ pip3 install drawSvg
 ```
 
-## Prerequisites
-
-Cairo needs to be installed separately. When Cairo is installed, drawSvg can output PNG or other image formats in addition to SVG. See platform-specific [instructions for Linux, Windows, and macOS from Cairo](https://www.cairographics.org/download/). Below are some examples for installing Cairo on Linux distributions and macOS.
-
-**Ubuntu**
-
-```
-$ sudo apt-get install libcairo2
-```
-
-**macOS**
-
-Using [homebrew](https://brew.sh/):
-
-```
-$ brew install cairo
-```
-
 # Examples
 
 ### Basic drawing elements
@@ -94,10 +76,8 @@ d.append(draw.Line(30, -20, 0, -10,
 d.setPixelScale(2)  # Set number of pixels per geometry unit
 #d.setRenderSize(400,200)  # Alternative to setPixelScale
 d.saveSvg('example.svg')
-d.savePng('example.png')
 
 # Display in Jupyter notebook
-d.rasterize()  # Display as PNG
 d  # Display as SVG
 ```
 
