@@ -1,5 +1,7 @@
 # drawSvg
 
+## This is a fork of cduck drawSvg library that removes the need for Cairo dependencies.
+
 A Python 3 library for programmatically generating SVG images (vector drawings) and rendering them or displaying them in a Jupyter notebook.
 
 Most common SVG tags are supported and others can easily be added by writing a small subclass of `DrawableBasicElement` or `DrawableParentElement`.
